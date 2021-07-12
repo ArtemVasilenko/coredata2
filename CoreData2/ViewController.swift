@@ -7,13 +7,37 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UITableViewDelegate {
+    
+    
+    var test = ["odin", "dva", "tri"]
+    @IBOutlet weak var coreData2TableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.coreData2TableView.delegate = self
+        self.coreData2TableView.dataSource = self
     }
 
 
+}
+
+extension ViewController: UITabBarDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        test.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
+        
+        cell?.textLabel?.text = self.test[indexPath.row]
+        
+        return cell!
+    }
+    
+    
+    
+    
 }
 

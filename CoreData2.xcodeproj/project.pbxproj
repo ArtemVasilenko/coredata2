@@ -15,6 +15,9 @@
 		5523DAB3257FA40F00045EE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5523DAB1257FA40F00045EE6 /* LaunchScreen.storyboard */; };
 		5523DABE257FA41000045EE6 /* CoreData2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5523DABD257FA41000045EE6 /* CoreData2Tests.swift */; };
 		5523DAC9257FA41000045EE6 /* CoreData2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5523DAC8257FA41000045EE6 /* CoreData2UITests.swift */; };
+		5523DADA257FA42B00045EE6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5523DAD9257FA42B00045EE6 /* Model.swift */; };
+		5523DAE0257FA49B00045EE6 /* ListToBuy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5523DADE257FA49B00045EE6 /* ListToBuy.xcdatamodeld */; };
+		5523DB03257FB36E00045EE6 /* Product+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5523DB01257FB36E00045EE6 /* Product+CoreDataClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		5523DAC4257FA41000045EE6 /* CoreData2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreData2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5523DAC8257FA41000045EE6 /* CoreData2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData2UITests.swift; sourceTree = "<group>"; };
 		5523DACA257FA41000045EE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5523DAD9257FA42B00045EE6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		5523DADF257FA49B00045EE6 /* ListToBuy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ListToBuy.xcdatamodel; sourceTree = "<group>"; };
+		5523DB01257FB36E00045EE6 /* Product+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataClass.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +105,16 @@
 		5523DAA5257FA40E00045EE6 /* CoreData2 */ = {
 			isa = PBXGroup;
 			children = (
-				5523DAA6257FA40E00045EE6 /* AppDelegate.swift */,
-				5523DAA8257FA40E00045EE6 /* SceneDelegate.swift */,
+				5523DADE257FA49B00045EE6 /* ListToBuy.xcdatamodeld */,
+				5523DB01257FB36E00045EE6 /* Product+CoreDataClass.swift */,
+				5523DAD9257FA42B00045EE6 /* Model.swift */,
 				5523DAAA257FA40E00045EE6 /* ViewController.swift */,
 				5523DAAC257FA40E00045EE6 /* Main.storyboard */,
 				5523DAAF257FA40F00045EE6 /* Assets.xcassets */,
 				5523DAB1257FA40F00045EE6 /* LaunchScreen.storyboard */,
 				5523DAB4257FA40F00045EE6 /* Info.plist */,
+				5523DAA6257FA40E00045EE6 /* AppDelegate.swift */,
+				5523DAA8257FA40E00045EE6 /* SceneDelegate.swift */,
 			);
 			path = CoreData2;
 			sourceTree = "<group>";
@@ -261,6 +270,9 @@
 				5523DAAB257FA40E00045EE6 /* ViewController.swift in Sources */,
 				5523DAA7257FA40E00045EE6 /* AppDelegate.swift in Sources */,
 				5523DAA9257FA40E00045EE6 /* SceneDelegate.swift in Sources */,
+				5523DADA257FA42B00045EE6 /* Model.swift in Sources */,
+				5523DAE0257FA49B00045EE6 /* ListToBuy.xcdatamodeld in Sources */,
+				5523DB03257FB36E00045EE6 /* Product+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,6 +599,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5523DADE257FA49B00045EE6 /* ListToBuy.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5523DADF257FA49B00045EE6 /* ListToBuy.xcdatamodel */,
+			);
+			currentVersion = 5523DADF257FA49B00045EE6 /* ListToBuy.xcdatamodel */;
+			path = ListToBuy.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5523DA9B257FA40E00045EE6 /* Project object */;
 }
